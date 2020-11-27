@@ -1,18 +1,14 @@
-import logo from './img/header/logo.svg';
+import Header from './header/index';
 
 function App() {
   return (
-    <div className="App">
-      <header className="header">
-        <div className="header-logo">
-          <img src={logo} alt={"logo"} className="header-logo__img" />
+    <div className="wrapper">
+      <div className="content">
+        <Header />
+        <div className="main">
         </div>
-        <div className="header-menu">
-          <div className="header-menu__item">Карта</div>
-          <div className="header-menu__item">Профиль</div>
-          <div className="header-menu__item">Выйти</div>
-        </div>
-      </header>
+      </div>
+      <footer className="footer"></footer>
     </div>
   );
 }
