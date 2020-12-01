@@ -1,44 +1,46 @@
 import React from 'react';
+import Header from './Header';
+import Login from '../Login';
+import Registration from '../Registration';
+import Map from '../Map';
+import Profile from '../Profile';
 
 class Navigation extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.navItems = document.querySelectorAll('.header-menu__item');
-        this.state = {
-            name: "login"
-        };
+
+    state = {
+        page: 'login'
+    }
+
+    navigate = (page) => {
+
+        this.setState({ page });
 
     }
 
+    render() {
 
-    navClick = () => {
-
-        this.navItems.forEach((item) => {
-
-            item.classList.remove('active');
-
-        });
-
-        console.log(this);
-
-        // this.setState({name: this.dataset.name});
-
-        this.classList.add('active');
-
-    }
-
-    render () {
+        const { page } = this.state;
 
         return (
-            <div className="header-menu">
-                <div onClick={this.navClick} className="header-menu__item" data-name="map">Карта</div>
-                <div onClick={this.navClick} className="header-menu__item" data-name="profile">Профиль</div>
-                <div onClick={this.navClick} className="header-menu__item" data-name="logout">Выйти</div>
+
+            <div>
+                
+                <Header navigate={this.navigate} />
+
+                <div className="main">
+                    { page === 'login' && <Login /> }
+                    { page === 'registration' && <Registration /> }
+                    { page === 'map' && <Map /> }
+                    { page === 'profile' && <Profile /> }
+                </div>
+
             </div>
+
         );
 
-    };
+    }
+
 
 }
 
