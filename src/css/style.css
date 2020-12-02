@@ -203,6 +203,10 @@ textarea, input {
   margin-bottom: 30px;
 }
 
+.log-main__caption {
+  text-align: center;
+}
+
 .log-main__caption span {
   color: #FDBF5A;
   cursor: pointer;
