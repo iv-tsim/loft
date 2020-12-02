@@ -24,7 +24,7 @@ class Navigation extends React.Component {
 
         return (
 
-            <div>
+            <>
                 
                 { (page === 'map' ||  page === 'profile') && <Header navigate={this.navigate} /> }
 
@@ -35,7 +35,7 @@ class Navigation extends React.Component {
                     { page === 'profile' && <Profile /> }
                 </div>
 
-            </div>
+            </>
 
         );
 
