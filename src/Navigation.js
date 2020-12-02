@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from './Header';
-import Login from '../Login';
-import Registration from '../Registration';
-import Map from '../Map';
-import Profile from '../Profile';
+import Header from './header';
+import Login from './Login';
+import Registration from './Registration';
+import Map from './Map';
+import Profile from './Profile';
 
 class Navigation extends React.Component {
 
