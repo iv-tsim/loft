@@ -58,6 +58,22 @@ textarea, input {
   border-radius: 0;
 }
 
+.btn {
+  border-radius: 70px;
+  background-color: #FDBF5A;
+  font-size: 25px;
+  padding: 15px 30px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: .3s background-color;
+  transition: .3s background-color;
+}
+
+.btn:hover {
+  background-color: #fcab28;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -98,5 +114,103 @@ textarea, input {
 
 .header-menu__item.active {
   color: #FDBF5A;
+}
+
+.log {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.log-dec {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #1C1A19;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.log-main {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../img/log/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.log-main__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.log-main__form {
+  min-width: 350px;
+}
+
+.log-main__form-wrapper {
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 55px 110px;
+  background-color: #fff;
+}
+
+.log-main__form-item {
+  margin-bottom: 25px;
+}
+
+.log-main__form-item__title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.log-main__form-item__input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #E4E4E4;
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.log-main__form-submit {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.log-main__caption span {
+  color: #FDBF5A;
+  cursor: pointer;
+  -webkit-transition: .3s color;
+  transition: .3s color;
+}
+
+.log-main__caption span:hover {
+  color: #fcab28;
 }
 /*# sourceMappingURL=style.css.map */

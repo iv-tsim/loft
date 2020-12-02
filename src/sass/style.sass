@@ -45,9 +45,24 @@ textarea, input
     -moz-appearance: none
     border-radius: 0
 
+.btn
+    border-radius: 70px
+    background-color: $coromiko
+    font-size: 25px
+    padding: 15px 30px
+    border: none
+    text-align: center
+    cursor: pointer
+    transition: .3s background-color
+    &:hover
+        background-color: darken($coromiko, 10%)
 
 
 // Файлы, относящиеся ко всем страницам
 
 
 @import ./general/_header.sass
+
+// Файлы, относящиеся к странице Log
+
+@import ./log/_log.sass

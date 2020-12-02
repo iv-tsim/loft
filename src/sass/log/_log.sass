@@ -1,0 +1,53 @@
+.log
+    height: 100vh
+    display: flex
+    justify-content: space-between
+    &-dec
+        flex-grow: 1
+        background-color: $codGray
+        display: flex
+        align-items: center
+        justify-content: center
+    &-main
+        flex-grow: 2
+        display: flex
+        align-items: center
+        justify-content: center
+        background-image: url(../img/log/bg.jpg)
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: cover
+        &__title
+            text-align: center
+            font-weight: 700
+            font-size: 30px
+            margin-bottom: 50px
+        &__form
+            min-width: 350px
+            &-wrapper
+                box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1)
+                border-radius: 20px
+                padding: 55px 110px
+                background-color: #fff
+            &-item
+                margin-bottom: 25px
+                &__title
+                    font-weight: 700
+                    font-size: 16px
+                &__input
+                    width: 100%
+                    border: none
+                    border-bottom: 2px solid $mercury 
+                    font-size: 18px
+                    padding: 10px 0
+            &-submit
+                width: 100%
+                margin-top: 10px
+                margin-bottom: 30px
+        &__caption
+            span
+                color: $coromiko
+                cursor: pointer
+                transition: .3s color
+                &:hover
+                    color: darken($coromiko, 10%)

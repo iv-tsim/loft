@@ -26,11 +26,11 @@ class Navigation extends React.Component {
 
             <div>
                 
-                <Header navigate={this.navigate} />
+                { (page === 'map' ||  page === 'profile') && <Header navigate={this.navigate} /> }
 
                 <div className="main">
-                    { page === 'login' && <Login /> }
-                    { page === 'registration' && <Registration /> }
+                    { page === 'login' && <Login navigate={this.navigate} /> }
+                    { page === 'registration' && <Registration navigate={this.navigate} /> }
                     { page === 'map' && <Map /> }
                     { page === 'profile' && <Profile /> }
                 </div>
